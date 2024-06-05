@@ -17,16 +17,31 @@ function App() {
 
     for (let i = 0; i < array.length; i++) {
       let char = Math.floor(Math.random() * str.length +1)
+      pass = str.charAt(char)
+
       
     }
+    setpassword(pass)
 
-    let
+    
  }, [length,numberAllowed,charAllowed,setpassword])
 
   return (
     <>
-     
-        <h1 className='text-5xl text-center text-white'>password generator</h1>
+    <div className="box">
+     {/* <div className='w-full max-w-md mx-auto shadow-md align-center justify-center  rounded-lg px-3 my-8 text-orange-600 bg-gray-800'> */}
+      <h1>Password Generator</h1>
+      <div className='flex shadow rounded-lg overflow-hidden mb-4'>
+        <input
+         type="text"
+         value={password}
+         className='input' 
+         placeholder='Password'
+         readOnly
+         />
+
+      </div>
+     </div>
     </>
   )
 }
