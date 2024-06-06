@@ -1,6 +1,6 @@
 import { useCallback, useState } from 'react'
 
-import './App.css'
+// import './App.css'
 
 function App() {
  const [length, setlenght] = useState(8);
@@ -28,8 +28,8 @@ function App() {
 
   return (
     <>
-    <div className="box">
-     {/* <div className='w-full max-w-md mx-auto shadow-md align-center justify-center  rounded-lg px-3 my-8 text-orange-600 bg-gray-800'> */}
+    <div className="box w-full h-full">
+     <div className='w-full max-w-md mx-auto shadow-md align-center justify-center  rounded-lg px-3 my-8 text-orange-600 bg-gray-800'>
       <h1>Password Generator</h1>
       <div className='flex shadow rounded-lg overflow-hidden mb-4'>
         <input
@@ -39,8 +39,10 @@ function App() {
          placeholder='Password'
          readOnly
          />
+         test
 
       </div>
+     </div>
      </div>
     </>
   )
